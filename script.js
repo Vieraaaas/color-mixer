@@ -2,7 +2,7 @@ const red = document.querySelector("#red");
 const green = document.querySelector("#green");
 const blue = document.querySelector("#blue");
 const root = document.querySelector(":root");
-const colorTExt = document.querySelector("#rgb");
+const colorText = document.querySelector("#rgb");
 
 function changeRed() {
   root.style.setProperty("--red", red.value);
@@ -20,7 +20,7 @@ function changeBlue() {
 }
 
 function changeText() {
-  colorTExt.innerText =
+  colorText.innerText =
     "RGB (" + red.value + ", " + green.value + ", " + blue.value + ")";
 }
 
