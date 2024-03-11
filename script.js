@@ -24,6 +24,6 @@ function changeText() {
     "RGB (" + red.value + ", " + green.value + ", " + blue.value + ")";
 }
 
-red.addEventListener("change", changeRed);
-green.addEventListener("change", changeGreen);
-blue.addEventListener("change", changeBlue);
+red.addEventListener("input", changeRed);
+green.addEventListener("input", changeGreen);
+blue.addEventListener("input", changeBlue);
