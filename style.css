@@ -1,0 +1,57 @@
+:root {
+  font-size: 16px;
+  --color: orange;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  align-items: center;
+  border-bottom: 0.5rem solid black;
+  background-color: rgb(186, 230, 169);
+}
+
+header input {
+  margin-right: 1rem;
+}
+
+header p {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+main {
+  background-color: var(--color);
+}
+
+input[type="range"] {
+  appearance: none;
+  background-color: rgba(var(--slider-color), 0.5);
+  height: 1rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  background-color: rgb(var(--slider-color));
+  height: 1rem;
+  width: 1rem;
+}
+
+#red {
+  --slider-color: 255, 0, 0;
+}
+
+#green {
+  --slider-color: 0, 128, 0;
+}
+
+#blue {
+  --slider-color: 0, 0, 255;
+}
