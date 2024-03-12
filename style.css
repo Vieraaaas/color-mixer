@@ -58,3 +58,23 @@ input[type="range"]::-webkit-slider-thumb {
 #blue {
   --slider-color: 0, 0, 255;
 }
+
+@media (max-width: 930px) {
+  header {
+    flex-direction: column;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  form input {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 365px) {
+  #rgb {
+    font-size: 18px;
+  }
+}
