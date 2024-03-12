@@ -18,7 +18,7 @@ header {
   padding: 2rem;
   align-items: center;
   border-bottom: 0.5rem solid black;
-  background-color: rgb(186, 230, 169);
+  background-color: rgba(var(--color), 0.2);
 }
 
 header input {
